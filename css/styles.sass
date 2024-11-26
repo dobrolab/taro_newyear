@@ -1,0 +1,294 @@
+$c0: #5F2630
+$c1: #C7AB77
+$c9: #fff
+
+.manrope 
+	font-family: "Manrope", sans-serif
+	font-optical-sizing: auto
+	font-weight: 200
+	font-style: normal
+.viaoda-libre-regular 
+	font-family: "Viaoda Libre", serif
+	font-weight: 400
+	font-style: normal
+
+body
+	background-color: $c0
+	color: $c9
+	padding-top: 76px
+	min-width: 360px
+
+	h1, h2, h3
+		color: #C7AB77
+		font-family: "Viaoda Libre", serif
+		font-weight: 400
+		text-transform: uppercase
+
+	p
+		margin-bottom: 0
+
+header
+	height: 76px
+	background-color: $c1
+	position: absolute
+	top: 0
+	width: 100%
+	display: flex
+	align-items: center
+	.h3 a
+		font-family: "Viaoda Libre", serif
+		text-decoration: none
+		color: $c0
+		font-weight: 100
+		text-transform: uppercase
+
+main
+	h1
+		margin-top: 60px
+
+section
+	margin-top: 60px
+
+#dainput
+	padding-top: 60px
+	padding-bottom: 60px
+	p
+		margin-bottom: 20px
+	label
+		margin-bottom: 5px
+	select, input
+		font-size: 20px
+		padding: 15px 20px
+		background-color: #743944
+		border: 1px solid $c1
+		// border-image: linear-gradient(135deg,#f9c667 0%,#f79621 100%) 1
+		border-radius: 15px
+		width: 100%
+		margin-right: 15px
+		color: #fff
+	input
+		padding: 14px 20px
+
+	.calculate
+		margin-top: 20px
+		background-color: rgb(199, 171, 119)
+		background-image: linear-gradient(110deg, rgb(221, 204, 173), rgb(199, 171, 119))
+		font-size: 17px
+		padding: 16px 36px
+		border-radius: 40px
+		border: none
+		&:hover
+			background: rgb(199, 171, 119)
+			cursor: pointer
+
+
+.astar
+	position: relative
+	display: block
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	width: 700px
+	height: 800px
+	.tcard
+		position: absolute
+
+
+
+
+.tcard
+	transition: all .1s ease
+	border: 1px solid $c1
+	background-color: #743944
+	backdrop-filter: blur(2px)
+	padding: 5px
+	border-radius: 10px
+	width: 60px
+	height: 110px
+	display: flex
+	flex-direction: column
+	align-items: center
+	position: relative
+
+	&:hover
+		transform: scale(2)
+		z-index: 1
+
+	&.tcard_gray
+		background-color: $c1
+		color: $c0
+		.ordernumber,.romulus,.rstring
+			color: $c0
+
+	.ordernumber
+		position: absolute
+		left: 5px
+		top: 5px
+		font-size: 10px
+		color: $c1
+		line-height: 7px
+
+	.romulus
+		font-size: 15px
+		font-weight: bold
+
+	.rstring
+		font-size: 10px
+
+	.cimg
+		width: 38px
+		height: 65px
+		border-radius: 2px
+
+	&#r01
+		left: 275px
+		top: 280px
+
+	&#r02
+		left: 370px
+		top: 235px
+
+	&#r03
+		left: 465px
+		top: 280px
+
+	&#r04
+		left: 275px
+		top: 410px
+
+	&#r05
+		left: 370px
+		top: 455px
+
+	&#r06
+		left: 465px
+		top: 410px
+
+	&#r07
+		left: 205px
+		top: 480px
+
+	&#r08
+		left: 535px
+		top: 480px
+
+	&#r09
+		left: 370px
+		top: 600px
+
+	&#r10
+		left: 205px
+		top: 215px
+
+	&#r11
+		left: 535px
+		top: 215px
+
+	&#r12
+		left: 370px
+		top: 95px
+
+	&#r13
+		left: 250px
+		top: 210px
+
+	&#r14
+		left: 410px
+		top: 210px
+
+	&#r15
+		left: 370px
+		top: 340px
+
+.tcard
+	&.axisyellow
+		box-shadow: 0 0 0 5px #cccc00
+
+	&.axisgreen
+		box-shadow: 0 0 0 5px #0a8d64
+
+	&.axisblue
+		box-shadow: 0 0 0 5px #054f95
+
+	&.axisviolet
+		box-shadow: 0 0 0 5px #cb00b5
+
+
+.btn_filter
+	margin-bottom: 20px
+	color: $c1
+	input[type="checkbox"]:checked+label
+		color: #fff
+		border: none
+		border-bottom: 1px dashed #fff
+	.axis
+		color: $c1
+		border-radius: 0 !important
+		margin-right: 15px
+		border-bottom: 1px dashed transparent
+
+		&:hover
+			color: #fff
+			border-bottom: 1px dashed $c1
+	.btn-check
+		outline: none
+		border: none !important
+
+.tname
+	font-size: 18px
+	padding: 10px 15px
+	background-color: #743944
+	border: 1px solid #C7AB77
+	border-radius: 15px
+	margin-right: 5px
+	color: #fff
+
+@media (max-width: 1399px)
+	.mscale
+		width: 760px
+		height: auto
+		.astar
+			transform: scale(.75)
+
+@media (max-width: 1199px)
+	.mscale
+		width: 100%
+		overflow: hidden
+
+@media (max-width: 991px)
+	section#level_01
+		margin-top: -100px
+	.mscale
+		width: 100%
+		height: auto
+		.astar
+			transform: scale(0.7)
+
+@media (max-width: 767px)
+	section#level_01
+		margin-top: 0
+	.mscale
+		width: 100%
+		height: auto
+		.astar
+			transform: scale(1)
+			transform: translateX(-20%)
+
+@media (max-width: 576px)
+	.container
+		overflow: hidden
+	.mscale
+		width: 100%
+		.astar
+			transform: scale(0.7) translateX(-46.5%) translateY(-15%)
+
+
+@media (max-width: 767px)
+	#dainput select, #dainput input, .tname
+		font-size: 16px
+	.tname
+		padding: 5px 10px
+	.btn_filter .axis
+		font-size: 14px
+		margin-right: 10px
+

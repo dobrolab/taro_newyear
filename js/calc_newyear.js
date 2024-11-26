@@ -108,6 +108,8 @@ function calculateSum() {
 		while ( result02 > 22 ) { result02 = result02 - 22 };
 		result03 = result03 + yearnum;
 		while ( result03 > 22 ) { result03 = result03 - 22 };
+		result04 = result04 + yearnum;
+		while ( result04 > 22 ) { result04 = result04 - 22 };
 		result05 = result05 + yearnum;
 		while ( result05 > 22 ) { result05 = result05 - 22 };
 		result06 = result06 + yearnum;
